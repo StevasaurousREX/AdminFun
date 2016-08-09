@@ -377,6 +377,7 @@ public class Updater {
             } catch (final IOException ex) {
                 plugin.getLogger().log(Level.SEVERE, null, ex);
             }
+
         }
     }
 
@@ -616,7 +617,7 @@ public class Updater {
 
             final BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             final String response = reader.readLine();
-
+            reader.close();
             final JSONArray array = (JSONArray) JSONValue.parse(response);
 
             if (array.isEmpty()) {
@@ -644,6 +645,7 @@ public class Updater {
                 result = UpdateResult.FAIL_DBO;
             }
             plugin.getLogger().log(Level.SEVERE, null, e);
+
             return false;
         }
     }
