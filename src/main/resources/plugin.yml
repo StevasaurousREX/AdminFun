@@ -1,0 +1,6 @@
+name: AdminFun
+version: ${project.version}
+main: me.trevor1134.adminfun.AdminFun
+authors: [Trevor1134]
+description: The essential plugin for admin entertainment!
+website: https://www.spigotmc.org/resources/adminfun.4621/
