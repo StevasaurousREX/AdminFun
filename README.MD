@@ -40,5 +40,6 @@ Replace (command) with a command from the table below.
 | help [command/number]          | View the help page.                                    | adminfun.help       |
 | sound <target> <sound>         | Play a sound to the target player.                     | adminfun.sound      |
 
-#### Table of Contents
-[TOC]
+#### Contact Me
+To contact me you can use multiple methods. 
+You can either PM me on the Spigot forums, or email me @ trevorr1134@gmail.com
