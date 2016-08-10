@@ -20,6 +20,11 @@ public class ShowListener implements Listener {
     @EventHandler
     public void onClick(PlayerInteractEvent e) {
         if (ShowCommand.getWaiting().contains(e.getPlayer().getUniqueId())) {
+
+            if (e.getItem() == null) {
+                return;
+            }
+
             if (e.getItem().getType() == Material.WOOD_AXE) {
                 if (e.getAction() == Action.RIGHT_CLICK_BLOCK) {
                     if (e.getItem().getItemMeta().getDisplayName().equals("Show Selector")) {
