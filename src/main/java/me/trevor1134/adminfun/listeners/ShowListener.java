@@ -21,13 +21,13 @@ public class ShowListener implements Listener {
     public void onClick(PlayerInteractEvent e) {
         if (ShowCommand.getWaiting().contains(e.getPlayer().getUniqueId())) {
 
-            if (e.getItem() == null) {
+            if (e.getPlayer().getInventory().getItemInMainHand() == null) {
                 return;
             }
 
-            if (e.getItem().getType() == Material.WOOD_AXE) {
+            if (e.getPlayer().getInventory().getItemInMainHand().getType() == Material.WOOD_AXE) {
                 if (e.getAction() == Action.RIGHT_CLICK_BLOCK) {
-                    if (e.getItem().getItemMeta().getDisplayName().equals("Show Selector")) {
+                    if (e.getPlayer().getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("Show Selector")) {
                         // All ready to start
 
                         final Location l = e.getClickedBlock().getLocation();
