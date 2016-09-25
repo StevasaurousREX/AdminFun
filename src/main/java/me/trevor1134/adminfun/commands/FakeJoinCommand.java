@@ -2,8 +2,8 @@ package me.trevor1134.adminfun.commands;
 
 import me.trevor1134.adminfun.AdminFun;
 import me.trevor1134.adminfun.command.CommandBase;
-import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
 public class FakeJoinCommand extends CommandBase {
